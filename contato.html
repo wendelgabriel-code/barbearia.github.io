@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - Barbearia Salame</title>
+
+		<link rel="stylesheet" href="reset.css"> <!-- FAZ CHAMADA NOS ARQUIVOS DO CSS --->
+		<link rel="stylesheet" href="style.css"> <!-- FAZ CHAMADA NOS ARQUIVOS DO CSS --->
+	</head>
+	<body>
+		<header>
+			<div class="caixa"> <!-- CRIA UMA CLASSE CHAMADA CAIXA --->
+				<h1><img src="logo-principal.png" alt="Logo da Barbearia Salame"></h1> <!-- MOSTRA A IMAGEM DO LOGO --->
+
+				<nav> <!-- SEÇÃO NAVEGAVEL --->
+					<ul> <!-- CRIA UMA LISTA  --->
+						<li><a href="index.html">Home</a></li> <!-- MONTA NOVAMENTE O MENU --->
+						<li><a href="produtos.html">Produtos</a></li> <!-- MONTA NOVAMENTE O MENU --->
+						<li><a href="contato.html">Contato</a></li> <!-- MONTA NOVAMENTE O MENU --->
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form>
+				<label for="nomesobrenome">Nome e sobrenome</label> <!-- CRIA UM LABEL  --->
+				<input type="text" id="nomesobrenome" class="input-padrao" required> 
+
+				<label for="email">Email</label> <!-- CRIA UM LABEL  --->
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"> <!-- CRIA UM CAIXA COM UM EXEMPLO DENTRO  --->
+
+				<label for="telefone">Telefone</label> <!-- CRIA UM LABEL  --->
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"> <!-- CRIA UM CAIXA COM UM EXEMPLO DENTRO  --->
+
+				<label for="mensagem">Mensagem</label> <!-- CRIA UM LABEL  --->
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea> <!-- CRIA UM CAIXA COM UM EXEMPLO DENTRO  --->
+
+				<fieldset> <!-- AGRUPA ELEMENTOS --->
+					<legend>Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+					
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+					
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+				</fieldset> <!-- AGRUPA ELEMENTOS --->
+
+				<fieldset> <!-- AGRUPA ELEMENTOS --->
+					<legend>Qual horário prefere ser atendido?</legend>
+					<select> <!-- representa um controle que apresenta um menu de opções --->
+						<option>Manhã</option> <!-- menu de opções --->
+						<option>Tarde</option> <!-- menu de opções --->
+						<option>Noite</option> <!-- menu de opções --->
+					</select>
+				</fieldset> <!-- AGRUPA ELEMENTOS --->
+
+				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+				<input type="submit" value="Enviar formulário" class="enviar">
+			</form>
+
+			<table> <!-- CRIA UMA TABELA --->
+				<tr> <!-- cria uma linha na tabela --->
+					<td>Dia</td> <!-- cria coluna na tabela --->
+					<td>Horário</td> <!-- cria uma linha na tabela --->
+				</tr>
+				<tr>
+					<td>Segunda</td> <!-- cria coluna na tabela --->
+					<td>8h ~ 20h</td> <!-- cria coluna na tabela --->
+				</tr>
+				<tr> <!-- cria uma linha na tabela --->
+					<td>Quarta</td> <!-- cria coluna na tabela --->
+					<td>8h ~ 20h</td> <!-- cria coluna na tabela --->
+				</tr>
+				<tr> <!-- cria uma linha na tabela --->
+					<td>Sexta</td> <!-- cria coluna na tabela --->
+					<td>8h ~ 20h</td> <!-- cria coluna na tabela --->
+				</tr>
+			</table>
+		</main>
+
+		<footer> <!--- MOSTRA NO RODAPE --->
+			<img src="logo-claro.png" alt="Logo da Barbearia Alura"> <!-- MOSTRA A IMAGEM DO LOGO  --->
+			<p class="copyright">&copy; Copyright Barbearia Salame - 2022</p> <!-- MOSTRA A MENSAGEM  --->
+		</footer>
+	</body>
+</html>
